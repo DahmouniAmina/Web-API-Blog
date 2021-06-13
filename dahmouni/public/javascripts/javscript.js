@@ -15,7 +15,7 @@ function Remplir_list_users(){
     <td>
      
     <button class="btn btn-outline-danger" type="button" onclick="delete_user(${u.id})"> <span class="fa fa-trash"></span></button>
-    <button type= button id=trois class="add" title="Add" data-toggle="tooltip"onclick="creerUser()"><i class="material-icons">&#xE03B;</i></button>
+    <button type= button id=trois class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></button>
     <button type= button id=modifier class="edit" title="Modify" data-toggle="tooltip" ><i class="material-icons">&#xE254;</i></button> </td>
 </tr>`);
     })  
