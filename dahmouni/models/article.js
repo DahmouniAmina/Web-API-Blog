@@ -1,6 +1,7 @@
 'use strict';
-const { unique } = require('faker');
-const {Model} = require('sequelize');
+const {
+  Model
+} = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Article extends Model {
     /**
@@ -10,21 +11,16 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Article.belongsTo(models.User,{foreignKey: 'userId'})
-      Article.hasMany(models.Comment,{foreignKey: 'articleId'})
-      Article.belongsToMany(models.Tag, {through: 'ArticleTags'})
     }
   };
   Article.init({
-    title: {
+    title: 
+    {
       type: DataTypes.STRING,
-      unique:true
+      unique: true
     },
     content: DataTypes.TEXT,
-    published: {
-      type: DataTypes.BOOLEAN,
-      defaultValue:true
-    }
+    published: DataTypes.BOOLEAN
   }, {
     sequelize,
     modelName: 'Article',
