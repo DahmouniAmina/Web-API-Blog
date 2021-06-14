@@ -48,7 +48,7 @@ module.exports = {
                 {
                   title: faker.name.title(),
                   content: faker.lorem.text(),
-                  image: faker.image.imageUrl(),
+                  /*image: faker.image.imageUrl(),*/
                   published : true,
                   UserId :user.id,
                   createdAt:date,
