@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
     },
 
     content: DataTypes.TEXT,
-    image: DataTypes.TEXT,
+    /*image: DataTypes.TEXT,*/
 
     published: {
       type: DataTypes.BOOLEAN,

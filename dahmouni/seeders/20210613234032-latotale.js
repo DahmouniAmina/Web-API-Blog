@@ -46,7 +46,7 @@ module.exports = {
                 date.setDate(date.getDate()+i)
                 article.push(
                 {
-                  title: faker.name.title(),
+                  title: faker.name.title()+i,
                   content: faker.lorem.text(),
                   /*image: faker.image.imageUrl(),*/
                   published : true,
