@@ -1,6 +1,4 @@
 const { Article } = require('../models')
-
-
 module.exports = {
     getArticles(offset = 0, limit = 10) { 
         return Article.findAll({  offset: parseInt(offset), limit: parseInt(limit)});
