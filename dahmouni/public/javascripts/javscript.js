@@ -60,7 +60,7 @@ function creerUser(){
     const username = $('#username').val();
     const email=$('#email').val();
     const role=$('#role').val();
-    const password=$('#pwd').val();
+    const password=$('#password').val();
 
     $.ajax({ 
         url: '/users',
